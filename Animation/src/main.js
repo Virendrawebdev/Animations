@@ -1,6 +1,8 @@
 import gsap from 'gsap'
 import './style.css'
 
+//DAY01_ANIMATION
+
 // const box = document.querySelector('.box')
 // gsap.to(['.box', '.box2'])
 
@@ -15,14 +17,14 @@ import './style.css'
 // })
 
 //fromTo method is used to animate from a starting point to an ending point and then back to the starting point
-gsap.fromTo('.box', {
-    x: 0,
-}, {
-    delay: 0.6,
-    duration: 1,
-    x: 800,
-    y:200
-})
+// gsap.fromTo('.box', {
+//     x: 0,
+// }, {
+//     delay: 0.6,
+//     duration: 1,
+//     x: 800,
+//     y:200
+// })
 
 //custom properties can also be animated using gsap
 // const obj = {
@@ -35,3 +37,47 @@ gsap.fromTo('.box', {
 //         console.log(obj.a);
 //     }
 // });
+
+// DAY02_ANIMATION
+
+// gsap.to('.box',{
+//     delay:0.6,
+//     x:500,
+//     duration:1,
+//     ease:'steps(12)',
+//     repeat:3,
+//     yoyo:true
+// })
+
+// gsap.set('.box',{
+//     x:-300,
+// })
+
+// gsap.from('.box',{
+//     delay:0.6,
+//     x:1500,
+//     duration:1,
+//     ease:'power2.inOut',
+//     repeat:-1,
+// })
+
+
+// callback function after animation is complete
+
+// gsap.to('.box', {
+//     x:500,
+//     duration:1,
+//     onComplete:()=>{
+//         console.log('Animation complete');
+//     }
+// })
+
+gsap.to('.box', {
+    x:500,
+    duration:1,
+    onUpdate:()=>{
+        console.log('Animation in progress');
+    }
+})
+
+
