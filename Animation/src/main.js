@@ -72,12 +72,73 @@ import './style.css'
 //     }
 // })
 
-gsap.to('.box', {
-    x:500,
+// gsap.to('.box', {
+//     x:500,
+//     duration:1,
+//     onUpdate:()=>{
+//         console.log('Animation in progress');
+//     }
+// })
+
+// Day03_ANIMATION
+
+// gsap.to('box',{
+//     x:1200,
+//     duration:1.3,
+//     ease:'power2.',
+//     delay:1.6,
+//     stagger:{
+//         each:0.2,
+//         from:"center"
+//     },
+//     repeat:-1,
+//     yoyo:true
+// })
+
+
+// gsap.from('h1 span',{
+//     yPercent:100,
+//     opacity:0,
+//     duration:1,
+//     ease:'expo.out',
+//     stagger:{
+//         each:0.08,
+//         from:'center'
+//     },
+//     repeat:-1,
+//     yoyo:true
+
+// })
+
+// timeline
+
+
+const tl = gsap.timeline();
+tl.to('.box',{
+    x:1000,
     duration:1,
-    onUpdate:()=>{
-        console.log('Animation in progress');
-    }
+    ease:'power2.inOut',
+    delay:0.6,
+}).to('.box1',{
+    x:1000,
+    duration:1,
+    ease:'power2.inOut',
+},"viru",).to('.box2',{
+    x:1000,
+    duration:1,
+    ease:'power2.inOut',
+},"viru-=0.5",).to('.box3',{
+    x:1000,
+    duration:1,
+    ease:'power2.inOut',
 })
 
 
+
+//position parameters
+
+// tl.to(element,{property}, parameters);
+//types
+//1."<" => a. "<0.2"
+//2. "=" => a. "=-0.2"
+//3. labels 
