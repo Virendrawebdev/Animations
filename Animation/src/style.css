@@ -8,12 +8,7 @@ body{
   background-color: black;
 }
 
-/* .box{
-  width: 150px;
-  height: 130px;
-  background-color: red;
-  margin-bottom:1rem
-} */
+
 
 /* #app{
   height: 100vh;
@@ -37,10 +32,7 @@ span{
 
 
 /* timeline is sequence of multiple elements */
-.box,
-.box1,
-.box2,
-.box3{
+/* .box{
   width: 150px;
   height: 130px;
   margin-bottom:1rem
@@ -49,55 +41,132 @@ span{
 .box{
   background-color: red;
 }
-.box1{
-  background-color: blue;
+.page, .page2{
+  height:100vh;
+  width:100%;
 }
-.box2{
-  background-color: green;
+.page2{
+  position: relative;
 }
-.box3{
-  background-color: yellow;
+.content{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content h1{
+  font-size: 5.5rem;
+  font-weight: 300;
+}
+.imageDiv{
+  width: 100%;
+  height: 100%;
+  transform-origin:center ;
+}
+img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+} */
+
+/* splittext */
+/* #app{
+  width: 100%;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.play{
-  width: 10rem;
-  padding: 0.5rem;
-  background-color:rgb(10, 245, 10);
-  border:2px solid gray;
-  border-radius: 0.5rem;
+#app .title h1{
+  font-size:6rem;
+  font-weight: 300;
 }
-.pause{
-  width: 10rem;
-  padding: 0.5rem;
-  background-color:rgb(248, 5, 5);
-  border:2px solid gray;
-  border-radius: 0.5rem;
+.titleWord, .titleChars{
+  overflow: hidden;
+} */
+
+/* Draggable */
+
+/* #app{
+  width: 100%;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.restart{
-  width: 10rem;
-  padding: 0.5rem;
-  background-color: rgb(231, 231, 15);
-  border:2px solid gray;
-  border-radius: 0.5rem;
+.box{
+  width: 150px;
+  height: 130px;
+  background-color: red;
+  margin-bottom:1rem
+} */
+
+
+/* flip */
+#app{
+  width: 100%;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  perspective: 1600px;
 }
-.reverse{
-  width: 10rem;
-  padding: 0.5rem;
-  background-color: rgb(5, 5, 248);
-  border:2px solid gray;
-  border-radius: 0.5rem;
+
+.controls{
+  position: absolute;
+  top: 24px;
+  left: 24px;
 }
-.resume{
-  width: 10rem;
-  padding: 0.5rem;
-  background-color: rgb(248, 5, 248);
-  border:2px solid gray;
-  border-radius: 0.5rem;
+
+.toggle-btn{
+  border: none;
+  padding: 0.85rem 1.2rem;
+  background: white;
+  color: black;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 999px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-.seek{
-  width: 10rem;
-  padding: 0.5rem;
-  background-color: rgb(248, 248, 5);
-  border:2px solid gray;
-  border-radius: 0.5rem;
+
+.imageShow{
+  transform-style: preserve-3d;
+}
+
+.imageGallery{
+  height: 40%;
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.imageShow{
+  height: 70%;
+  width:70%;
+  background-color: aqua;
+  transform-origin: center;
+}
+
+.imageShow.flipped{
+  transform: scaleX(-1);
+}
+
+.imageShow img{
+  height: 100%;
+  width:100%;
+  object-fit: fill;
+}
+
+.imageGallery img{
+  height: 50%;
+  width: 40%;
+  object-fit:fill;
 }
