@@ -265,7 +265,7 @@ flipToggle?.addEventListener('click', () => {
 // tl.to('.imageDiv',{
 //     scale:1,
 //     ease:'steps(12)',    
-// }).to('.content',{
+// }).to('.content', 
 //     gap:"2rem",
 // },"<",)
 
