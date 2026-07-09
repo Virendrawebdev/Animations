@@ -1,11 +1,11 @@
-// import TextReveal from "@/components/TextReveal";
+import TextReveal from "@/components/TextReveal";
 
 export default function Page() {
   return (
     <div>
-      {/* <TextReveal splitBy='chars'> */}
+      <TextReveal splitBy='chars'>
         <h1 className="text-[5rem]">About Section</h1>
-      {/* </TextReveal> */}
+      </TextReveal>
     </div>
   );
 }

@@ -1,8 +1,7 @@
-
-const page = () => {
+export default function Page() {
   return (
-    <div>page project section</div>
-  )
+    <div>
+      <h1>Project Section</h1>
+    </div>
+  );
 }
-
-export default page
