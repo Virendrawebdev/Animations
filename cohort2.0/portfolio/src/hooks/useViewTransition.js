@@ -36,6 +36,7 @@ const createStrips = () => {
 };
 
 const removeOverlay = () => {
+   if (typeof document === "undefined") return;
   const el = document.getElementById("page-transition-overlay");
   if (el) el.remove();
 };
