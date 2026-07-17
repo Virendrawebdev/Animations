@@ -1,12 +1,17 @@
-// import React from 'react'
-// // import { scene, camera, cube, canvas, renderer } from './three.js'
+import React from 'react'
+import { Canvas } from '@react-three/fiber'
+import Expression from './components/Expression'
 
+const App = () => {
+  return (
+   <>
+   <div className='h-screen w-full'>
+    <Canvas>
+    <Expression />
+    </Canvas>
+    </div>
+   </>
+  )
+}
 
-
-// const App = () => {
-//   return 
-//    <canvas className="webgl"></canvas>
-  
-// }
-
-// export default App
+export default App
