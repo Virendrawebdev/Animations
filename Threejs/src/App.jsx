@@ -1,14 +1,21 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import Expression from './components/Expression'
+import Exprience from './components/Exprience'
 
 const App = () => {
   return (
    <>
-   <div className='h-screen w-full'>
+   <div className='parent h-screen w-full'>
     <Canvas>
-    <Expression />
+    {/* <Expression /> */}
+    <Exprience/>
     </Canvas>
+
+    <mesh>
+      <boxGeometry/>
+      <meshBasicMaterial color={'red'}/>
+    </mesh>
     </div>
    </>
   )
